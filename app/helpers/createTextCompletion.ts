@@ -17,8 +17,7 @@ export async function createTextCompletion(
 		.getAccessors()
 		.environmentReader.getSettings()
 		.getValueById('model');
-	// const url = `http://${model}/v1`;
-	const url = `http://llama3-8b:1234/v1`;
+	const url = `http://${model}/v1`;
 
 	const body = {
 		model,
